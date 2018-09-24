@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moto Test</title>
+</head>
+<body>
+    <section>
+    <h1>Замовте сучасний мотоцикл!!!</h1>
+            <h2>Заповніть наступну форму и натисніть кнопку «Замовити зараз»,
+                 щоб оформити заявку</h2>
+        <fieldset>
+            <legend>Bike</legend>
+            <form method="POST" action="https://formspree.io/andriy.kostretskiy@gmail.com">
+              <div>   
+                <label>
+                    <b>Оберіть марку мотоцикла:</b>
+                    <select name="motos">
+                        <option value="suzuki" selected>SUZUKI</option>
+                        <option value="kawasaki">KAWASAKI</option>
+                        <option value="yamaha">YAMAHA</option>
+                        <option value="ktm">KTM</option>
+                        <option value="bmw">BMW</option>
+                    </select>
+                </label>
+              </div>
+              <div>
+                  <p>Тип двигуна:
+                  </p>
+                  <p>
+                     <input type="radio" name="type" value="Поршневі" checked id="bean"> 
+                     <label for="bean">Поршневі</label><br>
+                     <input type="radio" name="type" value="Роторно-поршневі" id="notbean"> 
+                     <label for="notbean">Роторно-поршневі</label>
+                  </p>
+              </div>
+              <div>
+                  <p> <label for="size">Об'єм двигуна:</label> 
+                  </p>
+                  <p>
+                     <input type="number" name="size" min="50" max="2000" step="50" value="50" id="size">
+                  </p>
+              </div>
+              <div>
+                  <p>Тип приводу:
+                  </p>
+                  <p>
+                     <input type="checkbox" name="extras[]" value="Передній привід">Передній привід<br>
+                     <input type="checkbox" name="extras[]" value="Задній привід" checked>Задній привід<br>
+                     <input type="checkbox" name="extras[]" value="Повний привід" >Повний привід<br>
+                  </p>
+              </div>
+              <div>
+                  <p>Доставити за адресою:
+                  </p>
+                  <p>
+                  </p>
+              </div>
+              <div>
+              <p>Your gender:</p>
+                <label>
+                    <input type="radio" name="gender" value="male">
+                    Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female">
+                    Female
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="other">
+                    Other
+                </label>
+                </div>
+              <div>
+                  <p>І'мя та прізвище: 
+                  </p>
+                  <p>
+                     <input type="text" name="name" placeholder="Bucar Banzai" required value=""> 
+                  </p>
+              </div>
+              <div>
+                  <p>Адреса: 
+                  </p>
+                  <p>
+                     <input type="text" name="address" value="">
+                  </p>
+              </div>
+              <div>
+                  <p>Місто:
+                  </p> 
+                  <p>
+                     <input type="text" name="city" value="">
+                  </p> 
+              </div>
+              <div>
+                  <p>Країна: 
+                  </p>
+                  <p>
+                     <input type="text" name="state" value=""> 
+                  </p>
+              </div>
+              <div>
+                  <p>Ваш email: 
+                  </p>
+                  <p>
+                     <input type="email" name="email" placeholder="Ваш email">
+                  </p>
+              </div>
+              <div>
+                  <p>Телефон: 
+                  </p>
+                  <p>
+                     <input type="tel" name="phone" placeholder="Ваш телефон">
+                  </p>
+              </div>
+              <div>
+                  <p>Коментар:
+                  </p>
+                  <p>
+                     <textarea name="comments" maxlength="150"></textarea>
+                  </p>
+              </div>
+              <div>
+                  <p>Доставити до вказаної дати: 
+                  </p>
+                  <p>
+                     <input type="date" name="date">
+                  </p>
+              </div>
+              <input type="submit" value="Замовити">
+              <input type="reset" value="Перезавантажити">
+            </form>
+          </fieldset>  
+    </section>
+</body>
+</html>
